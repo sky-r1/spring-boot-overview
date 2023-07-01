@@ -5,6 +5,8 @@ management:
     web:
       exposure:
         include: "*"
+        # Exclude individual endpoint with a comma-delimited list
+        # exclude: "health, info"
   info:
     env:
       enabled: true
